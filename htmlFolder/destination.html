@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/cssFolder/destination.css">
+    <link rel="shortcut icon" href="/cssFolder/assets/favicon-32x32.png" type="image/x-icon">
+    <title>Space Tourism</title>
+</head>
+<body>
+    <header>
+        <div id="logoimg">
+          <a href="index.html"><img src="/cssFolder/assets/shared/logo.svg" alt="Logo"></a>
+        </div>
+        <div>
+          <div class="line"></div>
+        </div>
+        <div>
+          <div class="hamburger">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+          </div>
+          <ul id="headerLinks">
+            <a href="index.html"><li><span>00</span> HOME</li></a>
+            <a href="destination.html" class="focus"><li><span>01</span> DESTINATION</li></a>
+            <a href="crew.html"><li><span>02</span> CREW</li></a>
+            <a href="technology.html"><li><span>03</span> TECHNOLOGY</li></a>
+          </ul>
+        </div>
+    </header>
+
+    <main>
+        <div id="pickdes">
+            <p><span>01</span> PICK YOUR DESTINATION</p>
+        </div>
+        <div class="planetMain">
+            <div class="planetImageDiv">
+                <img id="planetImage"  src="/cssFolder/assets/destination/image-moon.png" alt="">
+            </div>
+            <div class="planetContentDiv">
+                <div>
+                    <ul class="planets">
+                        <li id="moon">MOON</li>
+                        <li id="mars">MARS</li>
+                        <li id="europa">EUROPA</li>
+                        <li id="titan">TITAN</li>
+                    </ul>
+                </div>
+                <div>
+                    <h1 id="planetName">MOON</h1>
+                    <p id="planetInfo">See our planet as you've never seen it before. A perfect relaxing trip away to help regain perspective and come back refreshed. While you're there, take in some history by visiting the Luna 2 and Apollo 11 landing sites.</p>
+                </div>
+                <hr>
+                <div id="distAndTimeDiv">
+                    <div>
+                        <h5>AVG. DISTANCE</h5>
+                        <h3 id="planetDistance">384,400 KM</h3>
+                    </div>
+                    <div>
+                        <h5>EST. DISTANCE TIME</h5>
+                        <h3 id="planetTime">3 DAYS</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+
+    <script src="/jsFolder/mobilehamburg.js"></script>
+    <script src="/jsFolder/destination.js"></script>
+  
+</body>
+</html>

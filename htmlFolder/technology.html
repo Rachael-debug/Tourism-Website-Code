@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/cssFolder/technology.css">
+    <link rel="shortcut icon" href="/cssFolder/assets/favicon-32x32.png" type="image/x-icon">
+    <title>Space Tourism</title>
+</head>
+<body>
+    <header>
+        <div id="logoimg">
+          <a href="index.html"><img src="/cssFolder/assets/shared/logo.svg" alt="Logo"></a>
+        </div>
+        <div>
+          <div class="line"></div>
+        </div>
+        <div>
+          <div class="hamburger">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+          </div>
+          <ul id="headerLinks">
+            <a href="index.html"><li><span>00</span> HOME</li></a>
+            <a href="destination.html"><li><span>01</span> DESTINATION</li></a>
+            <a href="crew.html"><li><span>02</span> CREW</li></a>
+            <a href="technology.html" class="focus"><li><span>03</span> TECHNOLOGY</li></a>
+          </ul>
+        </div>
+    </header>
+
+    <main>
+        <div id="spacelaunch">
+            <p><span>03</span> SPACE LAUNCH 101</p>
+        </div>
+        <div class="technologyMain">
+            <div class="techContentDiv">
+                <div id="techContentDiv1" class="technology">
+                    <li id="launchVehicle"> 1</li>
+                        <li id="spaceport">2</li>
+                        <li id="spaceCapsule">3</li>
+                </div>
+                <div id="techContentDiv2">
+                    <h5>THE TERMINOLOGY...</h5>
+                    <h1 id="techName">LAUNCH VEHICLE</h1>
+                    <p id="techInfo">A launch vehicle or carrier rocket is a rocket-propelled vehicle used to carry a payload from Earth's surface to space, usually to Earth orbit or beyond. Our WEB-X carrier rocket is the most powerful in operation. Standing 150 metres tall, it's quite an awe-inspiring sight on the launch pad!</p>
+                </div>
+                
+            </div>
+            <div class="techImageDiv">
+                <!-- <img id="techImage"  src="/cssFolder/assets/technology/image-launch-vehicle-portrait.jpg" alt=""> -->
+
+                <picture>
+                    <source 
+                      id="techImagetab1"
+                      media="(max-width: 768px)"
+                      srcset="/cssFolder/assets/technology/image-launch-vehicle-landscape.jpg">
+                    <img 
+                      id="techImage"
+                      src="/cssFolder/assets/technology/image-launch-vehicle-portrait.jpg" 
+                      alt="">
+                  </picture>
+            </div>
+        </div>
+    </main>
+
+
+    <script src="/jsFolder/mobilehamburg.js"></script>
+    <script src="/jsFolder/technology.js"></script>
+  
+</body>
+</html>

@@ -1,0 +1,417 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+@font-face {
+    font-family: Barlow;
+    src: url(/cssFolder/fonts/Barlow/Barlow-Light.ttf);
+}
+@font-face {
+    font-family: BarlowCond;
+    src: url(/cssFolder/fonts/Barlow_Condensed/BarlowCondensed-Light.ttf);
+}
+@font-face {
+    font-family: Bellefair;
+    src: url(/cssFolder/fonts/Bellefair/Bellefair-Regular.ttf);
+}
+
+body{
+    background-image: url(/cssFolder/assets/technology/background-technology-desktop.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center; 
+    color: white;
+}
+
+/* header design */
+header{
+    display: flex;
+    justify-content: space-between;
+    padding: 30px 0px 20px 50px;
+}
+#logoimg{
+    margin-top: auto;
+    margin-bottom: auto;
+}
+header img{
+    width: 40px;
+    margin: auto;
+}
+.line {
+    width: 500px;
+    height: 0;
+    border: 0.5px solid #C4C4C4;
+    margin: auto;
+    display: block;
+    position: absolute;
+    right: 49%;
+    top: 10%;
+    z-index: 1;
+}
+
+#headerLinks{
+    display: flex;
+    gap: 48px;
+    list-style-type: none;
+    font-family: BarlowCond;
+    letter-spacing: 2px;
+    font-size: 16px;
+    padding: 20px 70px 0px 80px;
+
+    background: white;
+    background: linear-gradient(
+        to right bottom,
+        rgba(255, 255, 255, 0.1),
+        rgba(255, 255, 255, 0.05)
+    );
+    backdrop-filter: blur(1rem);
+}
+#headerLinks li{
+    padding-bottom: 20px;
+}
+#headerLinks a.focus{
+    border-bottom: 2px solid white;
+}
+#headerLinks a:hover{
+    border-bottom: 2px solid rgba(255, 255, 255, 0.502);
+}
+
+#headerLinks span{
+    font-weight: bold;
+}
+#headerLinks a{
+    text-decoration: none;
+    color: white;
+}
+
+.hamburger{
+    display: none;
+    cursor: pointer;
+}
+.bar{
+    display: block;
+    width: 30px;
+    height: 3px;
+    margin: 7px auto;
+    -webkit-transition: all 0.4s ease-in-out;
+	transition: all 0.4s ease-in-out;
+    background-color: white;
+    border-radius: 20px;
+}
+
+
+/* MAIN STARTS */
+main{
+    margin-bottom: 130px;
+    margin-top: 30px;
+    margin-left: 140px;
+}
+#spacelaunch{
+    font-family: BarlowCond;
+    font-size: 28px;
+    letter-spacing: 4px;
+}
+#spacelaunch span{
+    font-weight: bold;
+    color: rgba(255, 255, 255, 0.25);
+}
+.technologyMain{
+    display: flex;
+    gap: 15px;
+    margin-top: 50px;
+}
+
+.techContentDiv{
+    /* max-width: 80%; */
+    display: flex;
+    gap: 50px;
+    margin-top: 70px;
+    margin-bottom: 70px;
+    margin: auto;
+}
+.techImageDiv{
+    max-width: 100%;
+    /* margin: auto; */
+}
+
+#techContentDiv2{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 0px;
+}
+.technology{
+    display: flex;
+    flex-direction: column;
+    gap: 10%;
+    list-style-type: none;
+    font-family: Bellefair;
+    font-size: 32px;
+    cursor: pointer;
+    color: #D0D6F9; 
+}
+.technology li{
+    border: 1px solid white;
+    border-radius: 500px;
+    padding: 20px 30px;
+}
+.planetActive{
+    color: #0B0D17;
+    background-color: white;
+}
+
+main h1{
+    font-family: Bellefair;
+    font-weight: 10;
+    font-size: 54px;
+    /* margin-top: 40px; */
+    margin-bottom: 24px;
+}
+
+#techInfo{
+    font-family: Barlow;
+    font-size: 18px;
+    line-height: 180%;
+    /* max-width: 56%; */
+    margin-bottom: 0px;
+}
+main h5{
+    font-family: Bellefair;
+    font-weight: 10;
+    font-size: 30px;
+    margin-bottom: 15px;
+    color: #f8f8f871;
+}
+
+
+
+
+
+
+ 
+/* TAB VIEW */
+@media only screen and (max-width:768px){
+    body{
+        background-image: url(/cssFolder/assets/technology/background-technology-tablet.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center; 
+        color: white;
+    }
+
+
+    header{
+        padding: 0px 0px 20px 30px;
+    }
+    .line {
+        display: none;
+    }
+    #headerLinks{
+        font-size: 15px;
+        padding: 20px 50px 0px 80px;
+    }
+    #headerLinks li{
+        padding-bottom: 40px;
+        padding-top: 20px;
+    }
+
+
+    /* MAIN STARTS */
+    main{
+        margin-bottom: 130px;
+        margin-top: 20px;
+        margin-left: 0px;
+        
+    }
+    #spacelaunch{
+        font-size: 20px;
+        letter-spacing: 3px;
+        margin-left: 40px;
+        margin-right: 40px;
+    }
+    .technologyMain{
+        gap: 15px;
+        margin: auto;
+        margin-top: 50px;
+        flex-direction: column-reverse;
+        text-align: center;
+        
+    }
+    .techImageDiv{
+        max-width: 100%;
+        margin: auto;
+    }
+    .techImageDiv img{
+        max-width: 100%;
+        margin: auto;
+    }
+    
+    .techContentDiv{
+        /* max-width: 80%; */
+        flex-direction: column;
+        gap: 35px;
+        margin: auto;
+        margin-left: 40px;
+        margin-right: 40px;
+        justify-content: center;
+    }
+    
+    .technology{
+        flex-direction: row;
+        gap: 10%;
+        justify-content: center;
+        font-size: 24px;
+        margin: auto;
+    }
+    .technology li{
+        padding: 17px 25px;
+    }
+    /* .planetActive{
+        color: #0B0D17;
+        background-color: white;
+    } */
+    
+    main h1{
+        font-size: 40px;
+        /* margin-top: 40px; */
+        margin-bottom: 16px;
+    }
+    
+    #techInfo{
+        
+        font-size: 16px;
+        max-width: 80%;
+        margin: auto;
+        margin-bottom: 0px;
+        
+    }
+    main h5{
+        font-size: 24px;
+        margin-bottom: 15px;
+    }
+    
+    
+}
+
+/* MOBILE VIEW */
+@media only screen and (max-width: 600px){
+    body{
+        background-image: url(/cssFolder/assets/technology/background-technology-mobile.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center; 
+    }
+
+    body.noscroll{
+        overflow: hidden;
+    }
+    
+    /* header design */
+    header{
+        padding: 0px 0px 20px 20px;
+    }
+    
+    #logoimg{
+        margin-top: 30px;
+        margin-bottom: auto;
+    }
+    header img{
+        width: 45px;
+    }
+    
+    
+    #headerLinks{
+        display: flex;
+        gap: 30px;
+        padding: 120px 2px 40px 40px;
+        flex-direction: column;
+        position: fixed;
+        top: 0px;
+        right: -500px;
+        padding-bottom: 100%;
+        transition: all 0.8s ease-in-out;
+    }
+    #headerLinks.active{
+        right: 0px;
+        transition: all 0.8s ease-in-out;
+    }
+    #headerLinks li{
+        padding-bottom: 3px;
+        padding-top: 3px;
+        padding-right: 120px;
+    }
+    #headerLinks a.focus{
+        border-right: 3px solid white;
+        border-bottom: none;
+    }
+    #headerLinks a:hover{
+        border-right: 3px solid rgba(255, 255, 255, 0.502);
+        border-bottom: none;
+    }
+    
+    .hamburger{
+        display: block;
+        position: absolute;
+        top: 0px;
+        right: 30px;
+        z-index: 1;
+        margin-top: 30px;
+    }
+
+    .hamburger.active .bar:nth-child(2){
+        opacity: 0;
+    }
+    .hamburger.active .bar:nth-child(1){
+        transform: translateY(10px) rotate(45deg);
+    }
+    .hamburger.active .bar:nth-child(3){
+        transform: translateY(-10px) rotate(-45deg);
+    }
+
+
+    /* MAIN STARTS */
+    main{
+        /* max-width: 100%; */
+        margin-bottom: 80px;
+        margin-top: 20px;
+        margin-left: 0px;
+        
+    }
+
+    #spacelaunch{
+        font-size: 16px;
+        letter-spacing: 2px;
+        text-align: center;
+    }
+
+    .technologyMain{
+        gap: 25px;
+        
+    }
+    
+    .techContentDiv{
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+    
+    .technology{
+        font-size: 18px;
+    }
+    .technology li{
+        padding: 10px 16px;
+    }
+    main h1{
+        font-size: 24px;
+        margin-bottom: 16px;
+    }
+    
+    #techInfo{
+        
+        font-size: 15px;
+        max-width: 100%;
+    }
+    main h5{
+        font-size: 18px;
+        margin-bottom: 16px;
+    }
+   
+}
