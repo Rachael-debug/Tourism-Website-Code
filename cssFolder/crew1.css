@@ -338,7 +338,8 @@ main h5{
         padding-bottom: 100%;
         transition: all 0.8s ease-in-out;
         z-index: 5;
-        backdrop-filter: blur(4rem);
+        -webkit-backdrop-filter: blur(3rem);
+        backdrop-filter: blur(3rem);
     }
     #headerLinks.active{
         right: 0px;
