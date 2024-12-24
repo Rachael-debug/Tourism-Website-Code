@@ -1,0 +1,429 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+@font-face {
+    font-family: Barlow;
+    src: url(/cssFolder/fonts/Barlow/Barlow-Light.ttf);
+}
+@font-face {
+    font-family: BarlowCond;
+    src: url(/cssFolder/fonts/Barlow_Condensed/BarlowCondensed-Light.ttf);
+}
+@font-face {
+    font-family: Bellefair;
+    src: url(/cssFolder/fonts/Bellefair/Bellefair-Regular.ttf);
+}
+
+body{
+    background-image: url(/cssFolder/assets/crew/background-crew-desktop.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center; 
+    color: white;
+}
+
+/* header design */
+header{
+    display: flex;
+    justify-content: space-between;
+    padding: 30px 0px 20px 50px;
+}
+#logoimg{
+    margin-top: auto;
+    margin-bottom: auto;
+}
+header img{
+    width: 40px;
+    margin: auto;
+}
+.line {
+    width: 500px;
+    height: 0;
+    border: 0.5px solid #C4C4C4;
+    margin: auto;
+    display: block;
+    position: absolute;
+    right: 49%;
+    top: 10%;
+    z-index: 1;
+}
+
+#headerLinks{
+    display: flex;
+    gap: 48px;
+    list-style-type: none;
+    font-family: BarlowCond;
+    letter-spacing: 2px;
+    font-size: 16px;
+    padding: 20px 70px 0px 80px;
+
+    background: white;
+    background: linear-gradient(
+        to right bottom,
+        rgba(255, 255, 255, 0.1),
+        rgba(255, 255, 255, 0.05)
+    );
+    backdrop-filter: blur(1rem);
+}
+#headerLinks li{
+    padding-bottom: 20px;
+}
+#headerLinks a.focus{
+    border-bottom: 2px solid white;
+}
+#headerLinks a:hover{
+    border-bottom: 2px solid rgba(255, 255, 255, 0.502);
+}
+
+#headerLinks span{
+    font-weight: bold;
+}
+#headerLinks a{
+    text-decoration: none;
+    color: white;
+}
+
+.hamburger{
+    display: none;
+    cursor: pointer;
+}
+.bar{
+    display: block;
+    width: 30px;
+    height: 3px;
+    margin: 7px auto;
+    -webkit-transition: all 0.4s ease-in-out;
+	transition: all 0.4s ease-in-out;
+    background-color: white;
+    border-radius: 20px;
+}
+
+
+/* Main */
+main{
+    max-width: 78%;
+    margin: auto;
+    margin-bottom: 90px;
+    margin-top: 40px;
+}
+#meetCrew{
+    font-family: BarlowCond;
+    font-size: 28px;
+    letter-spacing: 4px;
+}
+#meetCrew span{
+    font-weight: bold;
+    color: rgba(255, 255, 255, 0.25);
+}
+
+.totalCrewContent{
+    display: flex;
+	overflow-x: auto;
+	scroll-snap-type: x mandatory;
+    scroll-snap-stop: always;
+	scroll-behavior: smooth;
+	-ms-overflow-style: none; /* Hide scrollbar IE and Edge */
+	scrollbar-width: none; /* Hide scrollbar Firefox */
+    gap: 10%;
+}
+.contentWrapper{
+    position: relative;
+	max-width: 100%;
+	margin: 0 auto;
+}
+.allCrewContent{
+    display: flex;
+    gap: 3%;
+    margin-top: 40px;
+    flex: 1 0 100%;
+    scroll-snap-type: block mandatory;
+	scroll-snap-align: start;
+	object-fit: cover;
+    scroll-snap-stop: always;
+}
+.crewContent1{
+    max-width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.crewContent1info{
+    margin: auto;
+    margin-top: auto;
+}
+.crewContent2{
+    max-width: 50%;
+    margin: auto;
+}
+.crewContent2 img{
+    width: 100%;
+    margin: auto;
+    mask-image: linear-gradient(to bottom, rgba(0,0,0,1) 80%, transparent 100%);
+}
+
+
+main h1{
+    font-family: Bellefair;
+    font-weight: 10;
+    font-size: 54px;
+    /* margin-top: 40px; */
+    margin-bottom: 24px;
+}
+
+.crewInfo{
+    font-family: Barlow;
+    font-size: 18px;
+    line-height: 180%;
+    /* max-width: 56%; */
+    margin-bottom: 0px;
+}
+main h5{
+    font-family: Bellefair;
+    font-weight: 10;
+    font-size: 30px;
+    margin-bottom: 15px;
+    color: #f8f8f871;
+}
+
+.dots{
+    display: flex;
+    gap: 4%;
+}
+.dots a{
+    width: 12px;
+    height: 12px;
+    border: 1px solid rgba(255, 255, 255, 0.037);
+    background-color: rgba(255, 255, 255, 0.174);
+    border-radius: 200px;
+    cursor: pointer;
+}
+.dots a:hover{
+    border: 1px solid rgb(255, 255, 255);
+}
+.dots a.crewActive{
+    background-color: white;
+}
+
+
+@media only screen and (max-width:768px){
+    body{
+        background-image: url(/cssFolder/assets/crew/background-crew-tablet.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center; 
+        color: white;
+    }
+
+
+    header{
+        padding: 0px 0px 20px 30px;
+    }
+    .line {
+        display: none;
+    }
+    #headerLinks{
+        font-size: 15px;
+        padding: 20px 50px 0px 80px;
+    }
+    #headerLinks li{
+        padding-bottom: 40px;
+        padding-top: 20px;
+    }
+
+
+    /* MAIN */
+    
+    main{
+        max-width: 90%;
+        margin: auto;
+        margin-bottom: 30px;
+        margin-top: 20px;
+    }
+    #meetCrew{
+        font-size: 20px;
+        letter-spacing: 3px;
+    }
+
+    
+
+    
+    .allCrewContent{
+        gap: 60px;
+        margin-top: 70px;
+        flex-direction: column;
+        text-align: center;
+    }
+    .crewContent1{
+        max-width: 75%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .crewContent2{
+        max-width: 60%;
+        margin: auto;
+    }
+    
+    main h1{
+        font-size: 40px;
+        /* margin-top: 40px; */
+        margin-bottom: 24px;
+    }
+    
+    .crewInfo{
+        font-size: 16px;
+        margin-bottom: 0px;
+    }
+    main h5{
+        font-size: 24px;
+        margin-bottom: 15px;
+    }
+    
+    .dots{
+        position: absolute;
+        margin: auto;
+        gap: 15px;
+        top: 86%;
+        left: 50%;
+        transform: translateX(-50%);
+        z-index: 2;
+        margin-top: auto;
+    }
+    .dots a{
+        width: 9px;
+        height: 9px;
+    }
+    
+
+    
+}
+
+@media only screen and (max-width:600px){
+    body{
+        background-image: url(/cssFolder/assets/crew/background-crew-mobile.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center; 
+    }
+
+    body.noscroll{
+        overflow: hidden;
+    }
+    
+    /* header design */
+    header{
+        padding: 0px 0px 20px 20px;
+    }
+    
+    #logoimg{
+        margin-top: 30px;
+        margin-bottom: auto;
+    }
+    header img{
+        width: 45px;
+    }
+    
+    
+    #headerLinks{
+        display: flex;
+        gap: 30px;
+        padding: 120px 2px 40px 40px;
+        flex-direction: column;
+        position: fixed;
+        top: 0px;
+        right: -500px;
+        padding-bottom: 100%;
+        transition: all 0.8s ease-in-out;
+    }
+    #headerLinks.active{
+        right: 0px;
+        transition: all 0.8s ease-in-out;
+    }
+    #headerLinks li{
+        padding-bottom: 3px;
+        padding-top: 3px;
+        padding-right: 120px;
+    }
+    #headerLinks a.focus{
+        border-right: 3px solid white;
+        border-bottom: none;
+    }
+    #headerLinks a:hover{
+        border-right: 3px solid rgba(255, 255, 255, 0.502);
+        border-bottom: none;
+    }
+    
+    .hamburger{
+        display: block;
+        position: absolute;
+        top: 0px;
+        right: 30px;
+        z-index: 1;
+        margin-top: 30px;
+    }
+
+    .hamburger.active .bar:nth-child(2){
+        opacity: 0;
+    }
+    .hamburger.active .bar:nth-child(1){
+        transform: translateY(10px) rotate(45deg);
+    }
+    .hamburger.active .bar:nth-child(3){
+        transform: translateY(-10px) rotate(-45deg);
+    }
+
+
+    /* MAIN */
+    
+    main{
+        margin-bottom: 30px;
+        margin-top: 20px;
+    }
+    #meetCrew{
+        font-size: 16px;
+        letter-spacing: 2px;
+        text-align: center;
+    }
+    
+
+    .allCrewContent{
+        gap: 50px;
+        margin-top: 50px;
+    }
+    .crewContent1{
+        max-width: 100%;
+    }
+    .crewContent2{
+        max-width: 80%;
+
+    }
+    
+    main h1{
+        font-size: 24px;
+        margin-bottom: 24px;
+    }
+    
+    .crewInfo{
+        font-size: 16px;
+        /* margin-bottom: 0px; */
+    }
+    main h5{
+        font-size: 18px;
+        margin-bottom: 15px;
+    }
+    
+    .dots{
+        margin: auto;
+        gap: 18px;
+        top: 75%;
+        /* margin: 20px; */
+    }
+    .dots a{
+        width: 8px;
+        height: 8px;
+    }
+    
+}
