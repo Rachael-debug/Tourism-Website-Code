@@ -65,6 +65,7 @@ header img{
         rgba(255, 255, 255, 0.05)
     );
     backdrop-filter: blur(1rem);
+    -webkit-backdrop-filter: blur(1rem);
 }
 #headerLinks li{
     padding-bottom: 20px;
@@ -311,6 +312,8 @@ main h3{
         right: -500px;
         padding-bottom: 100%;
         transition: all 0.8s ease-in-out;
+        -webkit-backdrop-filter: blur(2rem);
+        backdrop-filter: blur(2rem);
     }
     #headerLinks.active{
         right: 0px;
