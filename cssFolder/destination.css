@@ -282,6 +282,8 @@ main h3{
         background-repeat: no-repeat;
         background-size: cover;
         background-position: center; 
+        background-color: none;
+        /* height: 0; */
     }
 
     body.noscroll{
@@ -362,7 +364,7 @@ main h3{
     main{
         max-width: 90%;
         /* margin: auto; */
-        margin-bottom: 30px;
+        margin-bottom: 50px;
         margin-top: 40px;
     }
     #pickdes{
