@@ -300,6 +300,7 @@ main h5{
         background-repeat: no-repeat;
         background-size: cover;
         background-position: center; 
+        background-color: none;
     }
 
     body.noscroll{
