@@ -67,7 +67,7 @@ header img{
     backdrop-filter: blur(1rem);
     -webkit-backdrop-filter: blur(1rem);
 }
-#headerLinks li{
+#headerLinks li{ 
     padding-bottom: 20px;
 }
 #headerLinks a.focus{
@@ -297,6 +297,7 @@ main h3{
         margin-top: 30px;
         margin-bottom: auto;
     }
+
     header img{
         width: 45px;
     }
@@ -311,23 +312,27 @@ main h3{
         top: 0px;
         right: -500px;
         padding-bottom: 100%;
-        transition: all 0.8s ease-in-out;
+        transition: all 0.3s ease-in-out;
         -webkit-backdrop-filter: blur(2rem);
         backdrop-filter: blur(2rem);
     }
+
     #headerLinks.active{
         right: 0px;
-        transition: all 0.8s ease-in-out;
+        transition: all 0.3s ease-in-out;
     }
+
     #headerLinks li{
         padding-bottom: 3px;
         padding-top: 3px;
         padding-right: 120px;
     }
+
     #headerLinks a.focus{
         border-right: 3px solid white;
         border-bottom: none;
     }
+
     #headerLinks a:hover{
         border-right: 3px solid rgba(255, 255, 255, 0.502);
         border-bottom: none;
@@ -357,7 +362,7 @@ main h3{
     main{
         max-width: 90%;
         /* margin: auto; */
-        margin-bottom: 90px;
+        margin-bottom: 30px;
         margin-top: 40px;
     }
     #pickdes{
@@ -392,6 +397,22 @@ main h3{
          
     }
     
+
+    #mobileSlider{
+        /* height: 500px; */
+        display: grid;
+        position: relative;
+        height: 200px;
+        
+        overflow: hidden;
+        overflow-y: auto;
+        scroll-behavior: smooth;
+	    -ms-overflow-style: none; /* Hide scrollbar IE and Edge */
+	    scrollbar-width: none; /* Hide scrollbar Firefox */
+        scrollbar-color: rgba(255, 255, 255, 0.18) rgba(255, 255, 255, 0);
+    }
+
+
     main h1{
         font-size: 56px;
         margin-bottom: 16px;
