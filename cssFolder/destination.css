@@ -129,6 +129,17 @@ main{
     max-width: 50%;
 }
 
+#planetImage {
+    position: relative;
+    transition: opacity 0.5s ease-in-out, transform 0.5s ease;
+    opacity: 1;
+    transform: scale(1);
+}
+
+#planetImage.hidden {
+    opacity: 0;
+    transform: scale(0.95); /* Slight zoom-out effect */
+}
 
 .planets{
     display: flex;
