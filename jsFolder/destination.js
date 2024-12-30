@@ -23,6 +23,9 @@ moon.addEventListener("click", () => {
 
     setTimeout(() => {
         planetImage.src = "/cssFolder/assets/destination/image-moon.png";
+    }, 300);
+
+    setTimeout(() => {
         planetImage.classList.remove("hidden");
     }, 500);
 });
@@ -38,6 +41,9 @@ mars.addEventListener("click", () => {
 
     setTimeout(() => {
         planetImage.src = "/cssFolder/assets/destination/image-mars.png";
+    }, 300);
+
+    setTimeout(() => {
         planetImage.classList.remove("hidden");
     }, 500);
 });
@@ -53,6 +59,9 @@ europa.addEventListener("click", () => {
 
     setTimeout(() => {
         planetImage.src = "/cssFolder/assets/destination/image-europa.png";
+    }, 300);
+
+    setTimeout(() => {
         planetImage.classList.remove("hidden");
     }, 500);
 });
@@ -65,9 +74,13 @@ titan.addEventListener("click", () => {
     mobileSlider.scrollTop = 0;
 
     planetImage.classList.add("hidden");
+    
 
     setTimeout(() => {
         planetImage.src = "/cssFolder/assets/destination/image-titan.png";
+    }, 300);
+
+    setTimeout(() => {
         planetImage.classList.remove("hidden");
     }, 500);
 });
