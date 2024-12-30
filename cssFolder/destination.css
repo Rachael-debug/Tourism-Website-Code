@@ -317,7 +317,7 @@ main h3{
         transition: all 0.3s ease-in-out;
         -webkit-backdrop-filter: blur(2rem);
         backdrop-filter: blur(2rem);
-        z-index: 10;
+        z-index: 5;
     }
 
     #headerLinks.active{
